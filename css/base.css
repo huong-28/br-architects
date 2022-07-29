@@ -1,11 +1,64 @@
+/* ******************* */
+/* RESET CSS */
+/* ******************* */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
+  height: 2000px;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  /* chỉnh width để ảnh vừa màn hình k bị ra khỏi viewport */
+  /* nếu xét width 100% ngay từ đầu thì sẽ k thấy dc ảnh gốc  */
+  display: block;
+  /* img co tinh chat inline nen se co khoang trang o duoi nen phai dung block de bor khoang trang  */
+}
+/* *************** */
+/* HEADER */
+/* *************** */
+.heading-primary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 36px;
+  color: #f1f1f1;
+  letter-spacing: 4px;
+  font-weight: 400;
+  /* 400 normal, 700 bold, 600 somi bold  */
+  margin-top: 16px;
+}
+
+.heading-primary strong {
+  /* font-weight: 400; */
+  background-color: rgba(0, 0, 0, 0.75);
+  /* opacity: 0.75; */
+  padding: 8px 16px;
+}
+
+.main {
+  padding: 8px 16px; 
+}
+.section-box {
+  padding: 32px 16px;
+}
+

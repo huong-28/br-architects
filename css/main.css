@@ -4,44 +4,97 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  background-color: #ffff;
 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
   padding: 8px 16px;
+  width: 100%;
+
+  z-index: 1030;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
-.navbar-logo {
+.navbar-logo > span {
+  font-weight: 700;
+}
+
+.navbar-logo,
+.nav-link {
+  display: inline-block;
   letter-spacing: 4px;
   padding: 8px 16px;
   color: #000;
-  text-decoration: none;
+}
+
+.navbar-logo:hover,
+.nav-link:hover {
+  background-color: #ccc;
 }
 
 .navbar-nav {
   display: flex;
-  align-items: center;
 }
 
-.nav-item:hover {
-  background-color: #ccc;
+/* *************** */
+/* HEADER */
+/* *************** */
+.header {
+  position: relative;
 }
 
-.nav-item {
-  letter-spacing: 4px;
-  /* padding: 8px 16px; */
-  color: #000;
-  text-decoration: none;
+/* .header-img {
+  width: 100%; */
+/* 100% la do rong cua the cha la div ma cha cua div la body */
 
-  list-style-type: none;
+/* *************** */
+/* HEADER */
+/* *************** */
+@media (max-width: 992px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.nav-link {
-  color: #000;
-  text-decoration: none;
+
+.heading-secondary {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+
+  padding: 16px 0;
+  border-bottom: 1px solid #f1f1f1;
+  margin: 10px 0;
+}
+
+/* giá trị mặc định của align-items là tretch justify-content là flex-start  */
+/* *************** */
+/* PROJECTS */
+/* *************** */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.project-item {
+  position: relative;
+}
+
+.project-title {
+  position: absolute;
+  top: 0;
+  left: o;
+  /* phai xet top, left de xac dinh vi tri absolute */
   padding: 8px 16px;
-  display: inline-block;
-}
-
-a {
-    color: #ccc;
-
+  background-color: #000;
+  color: #ffffff;
+  font-size: 15px;
 }
