@@ -1,6 +1,7 @@
 /* *************** */
 /* NAVIGATION BAR */
 /* *************** */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,6 +27,7 @@
   letter-spacing: 4px;
   padding: 8px 16px;
   color: #000;
+  text-transform: capitalize;
 }
 
 .navbar-logo:hover,
@@ -44,14 +46,12 @@
   position: relative;
 }
 
-/* .header-img {
-  width: 100%; */
+.header-img {
+  width: 100%;
+}
 /* 100% la do rong cua the cha la div ma cha cua div la body */
 
-/* *************** */
-/* HEADER */
-/* *************** */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -60,28 +60,17 @@
   .project-grid {
     grid-template-columns: 1fr;
   }
-}
+} */
 
-
-.heading-secondary {
-  font-family: "Segoe UI", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-
-  padding: 16px 0;
-  border-bottom: 1px solid #f1f1f1;
-  margin: 10px 0;
-}
-
-/* giá trị mặc định của align-items là tretch justify-content là flex-start  */
 /* *************** */
 /* PROJECTS */
 /* *************** */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  padding: 0 16px;
+  padding: 0 16px 16px 16px;
 }
 
 .project-item {
@@ -97,4 +86,121 @@
   background-color: #000;
   color: #ffffff;
   font-size: 15px;
+}
+
+/* *************** */
+/* ABOUT */
+/* *************** */
+.card-body {
+  margin-bottom: 16px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 8px;
+}
+
+.section-text {
+  margin: 15px 0;
+}
+ 
+ .card-title {
+  color: #000;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin: 10px 0;
+ }
+  
+.card-subtitle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+.card-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.card-button {
+  /* color: #000; */
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  border: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.card-button:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+/* *************** */
+/* CONTACT */
+/* *************** */
+
+.section-text {
+  margin: 15px 0;
+}
+
+.form {
+  padding: 32px 16px;
+}
+.form-control {
+  overflow: visible;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 16px 0;
+}
+
+.form-button {
+  color: #ffffff;
+  background-color: #000;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 16px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* *************** */
+/* MAP */
+/* *************** */
+.map {
+  padding: 0.01px 16px;
+}
+
+/* *************** */
+/* FOOTER */
+/* *************** */
+.footer {
+  padding: 16px 0;
+  background-color: #000;
+}
+
+.copyright {
+  color: #ffffff;
+  background-color: #000;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.copyright a {
+  text-decoration: underline;
+}
+
+.copyright a:hover {
+  color: #4CAF50;
 }
