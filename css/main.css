@@ -5,29 +5,25 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #ffff;
+  align-items: center;
 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
-  padding: 8px 16px;
   width: 100%;
+  background-color: #ffff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
 
-  z-index: 1030;
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
-}
-
-.navbar-logo > span {
-  font-weight: 700;
+  z-index: 1030;
 }
 
 .navbar-logo,
 .nav-link {
   display: inline-block;
+  text-transform: capitalize;
   letter-spacing: 4px;
   padding: 8px 16px;
-  color: #000;
-  text-transform: capitalize;
 }
 
 .navbar-logo:hover,
@@ -42,35 +38,27 @@
 /* *************** */
 /* HEADER */
 /* *************** */
+
 .header {
   position: relative;
 }
 
-.header-img {
+/* .header-img {
   width: 100%;
-}
-/* 100% la do rong cua the cha la div ma cha cua div la body */
-
-/* @media (max-width: 992px) {
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
 } */
+/* 100% la do rong cua the cha la div ma cha cua div la body */
 
 /* *************** */
 /* PROJECTS */
 /* *************** */
 
-.project-grid {
-  display: grid;
+.project-grid,
+.about-grid {
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  padding: 0 16px 16px 16px;
+  gap: 16px; */
+  padding: 0 16px;
+  margin-bottom: 16px;
 }
 
 .project-item {
@@ -82,109 +70,32 @@
   top: 0;
   left: o;
   /* phai xet top, left de xac dinh vi tri absolute */
-  padding: 8px 16px;
+  
   background-color: #000;
   color: #ffffff;
-  font-size: 15px;
+  padding: 8px 16px;
 }
 
 /* *************** */
 /* ABOUT */
 /* *************** */
-.card-body {
-  margin-bottom: 16px;
-}
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 0 8px;
-}
-
-.section-text {
-  margin: 15px 0;
-}
- 
- .card-title {
-  color: #000;
-  font-weight: 400;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 24px;
-  margin: 10px 0;
- }
-  
-.card-subtitle {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  margin: 15px 0;
-  opacity: 0.6;
-}
-
-.card-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  margin: 15px 0;
-}
-
-.card-button {
-  /* color: #000; */
-  background-color: #f1f1f1;
-  padding: 8px 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  border: none;
-  text-align: center;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  margin: 15px 0;
-}
-
-.card-button:hover {
-  color: #000;
-  background-color: #ccc;
-}
 
 /* *************** */
 /* CONTACT */
 /* *************** */
 
-.section-text {
-  margin: 15px 0;
-}
-
-.form {
-  padding: 32px 16px;
-}
-.form-control {
-  overflow: visible;
-  padding: 8px;
-  display: block;
-  width: 100%;
-  border: 1px solid #ccc;
-  margin: 16px 0;
-}
-
-.form-button {
-  color: #ffffff;
-  background-color: #000;
-  border: none;
-  display: inline-block;
-  padding: 8px 16px;
-  margin: 16px 0;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
 /* *************** */
 /* MAP */
 /* *************** */
+
 .map {
-  padding: 0.01px 16px;
+  padding: 0 16px;
 }
 
 /* *************** */
 /* FOOTER */
 /* *************** */
+
 .footer {
   padding: 16px 0;
   background-color: #000;
@@ -192,7 +103,6 @@
 
 .copyright {
   color: #ffffff;
-  background-color: #000;
   padding: 15px 0;
   text-align: center;
 }

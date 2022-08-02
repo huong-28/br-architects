@@ -30,6 +30,23 @@ img {
   /* img co tinh chat inline nen se co khoang trang o duoi nen phai dung block de bo khoang trang  */
 }
 
+h1,
+h2,
+h5 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+h6 {
+  font-weight: 400;
+}
+
+input,
+button {
+  font: inherit;
+}
+
 /* ***************** */
 /* REUSABLE ELEMENTS */
 /* ***************** */
@@ -40,31 +57,24 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 36px;
   color: #f1f1f1;
   letter-spacing: 4px;
-  font-weight: 400;
-  /* 400 normal, 700 bold, 600 somi bold  */
   margin-top: 16px;
 }
 
 .heading-primary strong {
-  /* font-weight: 400; */
+  color: #fff;
   background-color: #000;
   opacity: 0.75;
   padding: 8px 16px;
-  color: #fff;
 }
 
 .heading-secondary {
-  font-family: "Segoe UI", sans-serif;
   font-size: 24px;
-  font-weight: 400;
-
   padding: 16px 0;
-  border-bottom: 1px solid #f1f1f1;
   margin: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .main {
@@ -75,6 +85,21 @@ img {
   padding: 32px 16px;
 }
 
-.button {
-  font: inherit
+.section-text {
+  margin: 15px 0;
+}
+
+/* ***************** */
+/* LAYOUT */
+/* ***************** */
+
+.grid--4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
 }

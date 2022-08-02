@@ -1,5 +1,73 @@
 /* *************** */
 /* CARD */
 /* *************** */
+
 .card-img-top {
-    filter: grayscale(75%);}
+  filter: grayscale(0.75);
+  -webkit-filter: grayscale(0.75);
+  width: 100%;
+}
+
+.card-body {
+  padding-bottom: 15px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.card-subtitle {
+  font-size: 15px;
+  margin: 15px 0;
+  opacity: 0.6;
+  color: #000;
+}
+
+.card-text {
+  margin: 15px 0;
+}
+
+.card-button {
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.card-button:hover {
+  background-color: #ccc;
+}
+
+/* *************** */
+/* MAP */
+/* *************** */
+
+.form-control {
+  display: inline-block;
+  width: 100%;
+  overflow: visible;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.form-button {
+  color: #ffffff;
+  background-color: #000;
+  display: inline-block;
+  text-transform: uppercase;
+
+  margin: 16px 0;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  color: #fff;
+  background-color: #ccc;
+}
